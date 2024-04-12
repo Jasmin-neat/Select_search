@@ -6,7 +6,7 @@ const SearchField: React.FC = () => {
       <input
         type="text"
         placeholder="なんでも質問を入力してください！"
-        className="container p-5 border rounded-search-field"
+        className="container p-5 border rounded-search"
       />
     </div>
   );
