@@ -1,12 +1,15 @@
 import React, { useState } from "react";
 import NavItem from "./NavItem";
+import { useNavigate } from "react-router-dom";
 
 const NavBar: React.FC = () => {
   const navItemList = ["Home", "People", "Knowledge", "Chat", "Setting"];
   const [activeItem, setActiveItem] = useState<string>(navItemList[0]);
+  const navigate = useNavigate();
 
   const navItemClick = (itemName: string) => {
     setActiveItem(itemName);
+    navigate(`/${itemName.toLowerCase()}`);
   };
 
   return (

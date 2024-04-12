@@ -12,12 +12,11 @@ function App() {
   return (
     <div className="flex">
       <NavBar />
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/Chat" element={<Chat />} />
-        </Routes>
-      </Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/chat" element={<Chat />} />
+      </Routes>
     </div>
   );
 }
