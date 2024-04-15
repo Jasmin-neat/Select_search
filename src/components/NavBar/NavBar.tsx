@@ -14,7 +14,7 @@ const NavBar: React.FC = () => {
 
   return (
     <nav>
-      <div className="flex flex-col w-22 h-screen p-4 bg-nav-color">
+      <div className="flex flex-col w-22 h-screen p-4 bg-nav">
         {navItemList.map((itemName, index) => (
           <NavItem
             key={index}

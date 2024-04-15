@@ -10,7 +10,7 @@ const NavItem: React.FC<NavItemProps> = ({ name, active, onClick }) => {
   const imgPath = `/svg/${name}.svg`;
 
   const itemClasses = `cursor-pointer ${
-    active ? "bg-nav-item-color" : "bg-transparent"
+    active ? "bg-nav-item" : "bg-transparent"
   }`;
 
   return (

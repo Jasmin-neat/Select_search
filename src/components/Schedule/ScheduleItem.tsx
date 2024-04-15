@@ -14,7 +14,7 @@ const ScheduleItem: React.FC<ScheduleItemProps> = ({
       <h1 className="font-bold mb-1">{meetingTime} </h1>
       <h2 className=" mb-2">{meetingName}</h2>
       <div className="flex items-center">
-        <button className="bg-join-color text-white p-1 rounded-lg mr-3">
+        <button className="bg-join text-white p-1 rounded-lg mr-3">
           参加する
         </button>
         <p className="text-xs bg-detail">詳細</p>

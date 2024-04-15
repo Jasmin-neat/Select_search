@@ -14,9 +14,9 @@ module.exports = {
         "table-item": ["16px", "40px"],
       },
       colors: {
-        "nav-color": "#F6F6F6",
-        "nav-item-color": "#5570F1",
-        "join-color": "#396AFF",
+        "nav": "#F6F6F6",
+        "nav-item": "#5570F1",
+        "join": "#396AFF",
         detail: "5D5656",
         send: "#5661F6",
       },
