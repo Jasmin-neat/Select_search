@@ -13,8 +13,8 @@ const NavBar: React.FC = () => {
   };
 
   return (
-    <nav>
-      <div className="flex flex-col w-22 h-screen p-4 bg-nav">
+    <nav className="mr-24">
+      <div className="flex flex-col fixed w-22 h-screen p-4 bg-nav">
         {navItemList.map((itemName, index) => (
           <NavItem
             key={index}

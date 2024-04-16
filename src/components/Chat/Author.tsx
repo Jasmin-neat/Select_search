@@ -9,11 +9,14 @@ interface AuthorProps {
 }
 
 const Author: React.FC<AuthorProps> = ({ type, authorName, data }) => {
+  const imgPath = authorName === "SONSHI" ? GptIcon : Toru;
+
   return (
     <div className="mb-11">
       <div className="flex items-center">
-        {type && <img src={Toru} alt="Toru" className="mr-2" />}
-        {!type && <img src={GptIcon} alt="GptIcon" className="mr-2" />}
+        <img src={imgPath} alt={authorName} className="mr-2" />
+        {/* {type && <img src={Toru} alt="Toru" className="mr-2" />}
+        {!type && <img src={GptIcon} alt="GptIcon" className="mr-2" />} */}
         <h1 className="text-xl font-medium">{authorName}</h1>
       </div>
 

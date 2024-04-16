@@ -5,7 +5,7 @@ import { Route, Routes } from "react-router-dom";
 import "./index.css";
 import "./App.css";
 import Home from "./components/Home";
-import Chat from "./components/Chat";
+import Chat from "./components/Chat/Chat";
 import People from "./components/People/People";
 import NavBar from "./components/NavBar/NavBar";
 
