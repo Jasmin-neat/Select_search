@@ -29,7 +29,7 @@ const People: React.FC = () => {
       data: "AI Engine",
     },
     {
-      id: 4,
+      id: 5,
       name: "SONSHI",
       avatar: "Sonshi",
       data: "AI Engine",
@@ -40,7 +40,7 @@ const People: React.FC = () => {
     <div className="w-full h-full flex flex-wrap gap-10 justify-between p-10 pt-20">
       {profileList.map((profileItem, index) => (
         <Profile
-          id={profileItem.id}
+          key={profileItem.id}
           name={profileItem.name}
           avatar={profileItem.avatar}
           data={profileItem.data}
